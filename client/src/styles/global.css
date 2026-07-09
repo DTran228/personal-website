@@ -1,4 +1,4 @@
-/* Global styles — minimal starter, we'll design properly later. */
+/* Global styles — minimal starter, we'll do a full design pass later. */
 
 * {
   margin: 0;
@@ -12,6 +12,8 @@ body {
   color: #e2e8f0;
   line-height: 1.6;
 }
+
+/* ── Navbar ── */
 
 .navbar {
   display: flex;
@@ -36,14 +38,111 @@ body {
   color: #38bdf8;
 }
 
+/* ── Page layout ── */
+
 .page {
   max-width: 800px;
   margin: 0 auto;
   padding: 3rem 2rem;
 }
 
+.page section {
+  margin-bottom: 3rem;
+}
+
+.page h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #f1f5f9;
+}
+
+.page p + p {
+  margin-top: 0.75rem;
+}
+
+/* ── Hero ── */
+
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-photo {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tagline {
+  color: #94a3b8;
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.hero-links a {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  color: #e2e8f0;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.hero-links a:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+/* ── "Currently working on" card ── */
+
+.now-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* ── Skills pills ── */
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills li {
+  padding: 0.25rem 0.85rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+/* ── Misc ── */
+
 .server-status {
-  margin-top: 2rem;
   font-size: 0.875rem;
   color: #64748b;
 }
