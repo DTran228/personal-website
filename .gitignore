@@ -1,0 +1,17 @@
+# Dependencies (reinstalled with npm install — never commit these)
+node_modules/
+
+# Build outputs
+client/dist/
+server/dist/
+
+# Database file (created later when we add SQLite)
+*.db
+
+# Environment secrets (API keys etc. — never commit)
+.env
+
+# Editor / OS clutter
+.vscode/
+.DS_Store
+Thumbs.db
