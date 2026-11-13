@@ -1,18 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { profile } from "../data/profile";
 
-// Sections of the site. Only Home is built; the others are listed
-// here so the navbar is ready — we'll uncomment each link as we
-// build its page.
 export default function Navbar() {
   return (
-    <nav className="navbar">
-      <span className="navbar-brand">Duc Tran</span>
+    <nav className="navbar" aria-label="Main navigation">
+      <a className="navbar-brand" href="#home">{profile.name}</a>
       <div className="navbar-links">
-        <NavLink to="/">Home</NavLink>
-        {/* <NavLink to="/education">Education</NavLink> */}
-        {/* <NavLink to="/projects">Projects</NavLink> */}
-        {/* <NavLink to="/experience">Experience</NavLink> */}
-        {/* <NavLink to="/coding">Coding</NavLink> */}
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   );
